@@ -29,10 +29,11 @@ args = parser.parse_args()
 BATCH_SIZE = 32
 EPOCHS     = 1000
 LR         = 3e-4
-NUM_GPUS   = 2
+NUM_GPUS   = 1
 IMAGE_SIZE = 256
 IMAGE_EXTS = ['.jpg', '.png', '.jpeg']
-NUM_WORKERS = multiprocessing.cpu_count()
+# NUM_WORKERS = multiprocessing.cpu_count()
+NUM_WORKERS = 0
 
 # pytorch lightning module
 
